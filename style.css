@@ -26,10 +26,12 @@ nav {
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 60px;
     font-weight: bold;
+    text-shadow: 2px 2px 2px #182628;
 }
 
 #home h3 {
     font-size: 30px;
+    text-shadow: 2px 2px 2px #182628;
 }
 
 
@@ -142,6 +144,34 @@ h1 {
 i {
     font-size: 80px;
     color: #f7f9fb;
+}
+
+#contact {
+    background-color: #3b945E;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#contactMe {
+    margin: 40px;
+}
+#contactMe a{
+    color: #f7f9fb;
+    margin: 10px;
+    font-size: 16px;
+}
+
+
+#follow i {
+    font-size: 48px;
+    margin: 0 10px;
+}
+
+a {
+    color: #3b945E;
 }
 
 
