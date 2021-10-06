@@ -51,6 +51,21 @@ nav {
     padding: 15px;
 }
 
+.textBox a {
+    background-color: #182628;
+    color: #f7f9fb;
+    justify-content: center;
+}
+.textBox div {
+    display: flex;
+    background-color: #182628;
+    color: #f7f9fb;
+    justify-content: center;
+    width: 160px;
+    margin: auto;
+    border-radius: 5px;
+}
+
 i {
     font-size: 80px;
     color: #f7f9fb;
