@@ -11,6 +11,18 @@ nav {
     color: #182628;
 }
 
+i {
+    font-size: 80px;
+    color: #f7f9fb;
+    margin-top: 15px;
+}
+
+h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 45px;
+}
+
+/* Home Section */
 #home {
     background-image: url(images/victoriaOnSwing.jpg);
     height: 100vh;
@@ -35,6 +47,7 @@ nav {
 }
 
 
+/* About Section */
 #about {
     background-color: #3b945E;
     height: 100vh;
@@ -42,6 +55,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
 .textBox {
@@ -58,6 +72,7 @@ nav {
     color: #f7f9fb;
     justify-content: center;
 }
+
 .textBox div {
     display: flex;
     background-color: #182628;
@@ -68,16 +83,7 @@ nav {
     border-radius: 5px;
 }
 
-i {
-    font-size: 80px;
-    color: #f7f9fb;
-    margin-top: 15px;
-}
-
-h1 {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 45px;
-}
+/* Skills Section */
 #skills {
     background-color: #57BA98;
     height: 100vh;
@@ -88,11 +94,7 @@ h1 {
 }
 
 #skills h1 {
-    margin-top: 40px;
-}
-
-#webDevelopment {
-    margin-top: 10px;
+    margin-top: 80px;
 }
 
 #webDevelopment .container {
@@ -124,10 +126,15 @@ h1 {
         grid-column-gap: 10px;
 }
 
+#skills .textBox{
+    width: 50%;
+}
+
 #skills h3 {
     text-align: center;
 }
 
+/* Portfolio Section */
 #portfolio {
     background-color: #65CCB8;
     height: 100vh;
@@ -135,15 +142,11 @@ h1 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 20px
 }
 
 #portfolio h1 {
     margin-bottom: 80px;
-}
-
-i {
-    font-size: 80px;
-    color: #f7f9fb;
 }
 
 #contact {
@@ -153,17 +156,18 @@ i {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 20px;
 }
 
 #contactMe {
     margin: 40px;
 }
+
 #contactMe a{
     color: #f7f9fb;
     margin: 10px;
     font-size: 16px;
 }
-
 
 #follow i {
     font-size: 48px;
@@ -172,6 +176,14 @@ i {
 
 a {
     color: #3b945E;
+}
+
+/* Footer Section */
+footer {
+    background-color: #f7f9fb;
+    color: #182628a1;
+    padding: 10px;
+    text-align: center;
 }
 
 
@@ -183,22 +195,44 @@ a {
 /* Media Queries */
 @media (min-width: 576px)
 { 
-    #portfolio {
-        height: 200vh;
+    #portfolio, #skills, #about, #contact {
+        height: auto;
     }
  }
 
  @media (max-width: 576px)
  { 
-     #portfolio {
-         height: 150vh;
+     #portfolio, #skills, #about, #contact {
+         height: auto;
      }
+     .textBox ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 10px;
+}
+#contactMe {
+    display: grid;
+}
   }
 
-  @media (min-width: 768px)
+  @media (min-width: 768px)  
  { 
-     #portfolio {
+     #portfolio, #skills, #about, #contact{
          height: 100vh;
      }
   }
+ 
+  @media (max-width: 576px) and (min-height: 700px ) and (max-height:800px)
+ { 
+     #portfolio {
+         height: auto;
+     }
+  }
+
+  @media (orientation: landscape) and (max-width: 768px)
+{
+    #portfolio, #skills, #about, #contact{
+        height: auto;
+    }   
+}
 
