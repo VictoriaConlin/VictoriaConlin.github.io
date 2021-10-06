@@ -55,5 +55,58 @@ i {
     font-size: 80px;
     color: #f7f9fb;
     margin-top: 15px;
+}
 
+h1 {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 45px;
+}
+#skills {
+    background-color: #57BA98;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#skills h1 {
+    margin-top: 40px;
+}
+
+#webDevelopment {
+    margin-top: 10px;
+}
+
+#webDevelopment .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#webDevelopment .box {
+    width: 33.3%;
+    text-align: center;
+    padding: 10px;
+}
+
+#webDevelopment .box h3 {
+    font-size: 15px;
+}
+
+#webDevelopment i {
+    font-size: 60px;
+    margin: auto;
+    color: #f7f9fb;
+}
+
+.textBox ul {
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        grid-column-gap: 10px;
+}
+
+#skills h3 {
+    text-align: center;
 }
