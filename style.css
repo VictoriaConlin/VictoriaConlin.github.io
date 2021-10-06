@@ -110,3 +110,50 @@ h1 {
 #skills h3 {
     text-align: center;
 }
+
+#portfolio {
+    background-color: #65CCB8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#portfolio h1 {
+    margin-bottom: 80px;
+}
+
+i {
+    font-size: 80px;
+    color: #f7f9fb;
+}
+
+
+
+
+
+
+
+/* Media Queries */
+@media (min-width: 576px)
+{ 
+    #portfolio {
+        height: 200vh;
+    }
+ }
+
+ @media (max-width: 576px)
+ { 
+     #portfolio {
+         height: 150vh;
+     }
+  }
+
+  @media (min-width: 768px)
+ { 
+     #portfolio {
+         height: 100vh;
+     }
+  }
+
