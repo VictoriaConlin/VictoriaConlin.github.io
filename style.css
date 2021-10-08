@@ -163,10 +163,14 @@ h1 {
     margin: 40px;
 }
 
-#contactMe a{
+#contactMe a {
     color: #f7f9fb;
     margin: 10px;
     font-size: 16px;
+}
+
+#contactMe i {
+    font-size: 20px;
 }
 
 #follow i {
@@ -177,6 +181,7 @@ h1 {
 a {
     color: #3b945E;
 }
+
 
 /* Footer Section */
 footer {
